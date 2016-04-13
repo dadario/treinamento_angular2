@@ -1,0 +1,13 @@
+<label>Nome:</label>
+<!-- data-bind to the input element; store value in yourName -->
+<input type="text" [(ngModel)]="nome" placeholder="Enter a name here">
+<br />
+
+<label>Idade:</label>
+<input type="number" [(ngModel)]="idade" />
+
+
+<hr>
+<!-- conditionally display `yourName` -->
+<h1 [hidden]="!nome">Hello {{nome}}!</h1>
+<h2>Você tem {{idade}} anos</h2>
